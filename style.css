@@ -1,0 +1,173 @@
+body{
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+}
+.logo{
+    width: 130px;
+    height: 130px;
+}
+.connexion{
+    background-color: #FFFFFF;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding-bottom: 150px;
+    border-radius: 8px;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 30px;
+    margin-right: 100px;
+}
+#password,#email{
+    background-color: #F4F4F4;
+    border: none;
+}
+.Supp{
+    color: #3461DB;
+    font-weight: 550;
+}
+.btn{
+    border-radius: 10px;
+    border: none;
+}
+.space{
+    padding-top: 40px;
+    color: #474749;
+}
+/* responsive */
+@media (max-width: 768px) {
+    .connexion{
+    padding-bottom: auto;
+    border-radius: auto;
+    padding-top: auto;
+    padding-left: auto;
+    padding-right: auto;
+    margin-left: auto;
+    margin-right: auto;
+    }
+    .logo{
+        width: 100px;
+        height: 100px;
+    }
+}
+/* Style des champs de saisie pour un look moderne */
+.form-control {
+    border-radius: 8px;
+    padding: 12px 15px;
+    transition: all 0.3s;
+}
+
+.form-control:focus {
+    background-color: #ffffff !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-color: #3461DB;
+}
+
+/* Bouton principal */
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    border-radius: 8px;
+}
+
+/* Ajustement pour la carte */
+.card {
+    border-radius: 15px;
+}
+
+
+/* Personnalisation des priorités pour correspondre à ton image */
+.table-success {
+    background-color: #a3f7bf !important; /* Vert clair */
+}
+.table-danger {
+    background-color: #ff9b9b !important; /* Rouge clair */
+}
+.table-primary {
+    background-color: #31F8F2 !important; /* Bleu clair pour Moyenne */
+}
+.text-primary {
+    color: #0077a3;
+}
+
+/* Formulaire de recherche arrondi style pilule */
+.py-2-5 {
+    padding-top: 0.65rem;
+    padding-bottom: 0.65rem;
+}
+
+/* Amélioration du design des tableaux */
+.table th {
+    font-size: 0.9rem;
+    background-color: #f1f3f5;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table td {
+    padding: 14px 8px;
+    font-size: 0.95rem;
+}
+
+/* Alignements et hauteurs pour la cohérence des deux cartes */
+.py-1-5 {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+}
+
+.py-2-5 {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+}
+
+/* Customisation douce des selects de formulaire */
+.custom-select {
+    background-color: #ffffff;
+    border: 1px solid #ced4da;
+    color: #212529;
+    font-weight: 500;
+}
+
+.custom-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.1);
+}
+
+/* Fix pour forcer les cartes à avoir exactement la même hauteur sur grand écran */
+@media (min-width: 992px) {
+    .h-lg-100 {
+        height: 100% !important;
+    }
+}
+
+/* Couleur personnalisée pour le rôle Technicien */
+.text-navy {
+    color: #0b2545 !important;
+}
+
+/* Gestion du centrage des éléments de tableau */
+.table th, .table td {
+    vertical-align: middle !important;
+}
+
+.custom-input {
+    background-color: #f1f3f5 !important; /* Gris très clair */
+    border: 1px solid #e9ecef !important;
+    color: #495057 !important;
+}
+
+.custom-input::placeholder {
+    color: #adb5bd;
+    opacity: 0.8;
+}
+
+/* Style des cartes */
+.rounded-4 {
+    border-radius: 1.25rem !important;
+}
+
+/* Bouton principal bleu */
+.btn-primary {
+    background-color: #0d6efd !important;
+    border: none;
+}

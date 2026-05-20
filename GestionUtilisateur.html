@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Utilisateurs</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <main class="container-fluid px-md-5 py-4 bg-light min-vh-100">
+
+    <div class="mb-4">
+        <a href="TableaubordTech.html" class="text-decoration-none fw-semibold text-primary">&larr; Retour au Tableau de bord des tickets</a>
+    </div>
+
+    <div class="text-center mb-4">
+        <h4 class="fw-bold text-dark m-0">Gestion des utilisateur</h4>
+    </div>
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
+        <div style="min-width: 120px;">
+            <button class="btn btn-danger px-4 py-2 rounded-3 fw-semibold shadow-sm w-100">Supprimer</button>
+        </div>
+        
+        <div class="flex-grow-1 mx-md-5" style="max-width: 500px;">
+            <div class="position-relative">
+                <input type="text" class="form-control rounded-pill ps-4 pe-5 py-2-5 border-0 shadow-sm" placeholder="Rechercher un nom, email...">
+                <i class="fas fa-search position-absolute top-50 end-0 translate-middle-y me-4 text-secondary"></i>
+            </div>
+        </div>
+
+        <div>
+            <a href="NewUtilisateur.html" class="btn btn-primary px-4 py-2 rounded-3 fw-semibold shadow-sm w-100">Ajouter un utilisateur</a>
+        </div>
+    </div>
+
+    <div class="card border-0 shadow-sm rounded-3 overflow-hidden">
+        <div class="table-responsive">
+            <table class="table table-bordered align-middle mb-0 text-center bg-white">
+                <thead class="table-light text-secondary fw-bold">
+                    <tr>
+                        <th style="width: 140px; vertical-align: middle;">
+                            <input type="checkbox" class="form-check-input me-1"> (Tout cocher)
+                        </th>
+                        <th style="vertical-align: middle;">
+                            ID <i class="fas fa-sort text-muted ms-1" style="font-size: 0.8rem; cursor: pointer;"></i>
+                        </th>
+                        <th style="vertical-align: middle;">
+                            Nom & Prénom <i class="fas fa-sort text-muted ms-1" style="font-size: 0.8rem; cursor: pointer;"></i>
+                        </th>
+                        <th style="vertical-align: middle;">
+                            Email <i class="fas fa-sort text-muted ms-1" style="font-size: 0.8rem; cursor: pointer;"></i>
+                        </th>
+                        <th style="vertical-align: middle;">
+                            Rôle <i class="fas fa-sort text-muted ms-1" style="font-size: 0.8rem; cursor: pointer;"></i>
+                        </th>
+                        <th style="vertical-align: middle;">
+                            Action <i class="fas fa-sort text-muted ms-1" style="font-size: 0.8rem; cursor: pointer;"></i>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody class="fw-medium text-dark">
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input"></td>
+                        <td>01</td>
+                        <td>Jean Dupont</td>
+                        <td>jeandupont@gmail.com</td>
+                        <td class="fw-bold text-navy">Technicien</td>
+                        <td><a href="#" class="text-decoration-none fw-semibold text-primary">Modifier</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input" checked></td>
+                        <td>02</td>
+                        <td>Marie Leroy</td>
+                        <td>marieleroy@gmail.com</td>
+                        <td class="text-secondary">Employé</td>
+                        <td><a href="#" class="text-decoration-none fw-semibold text-primary">Modifier</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input"></td>
+                        <td>03</td>
+                        <td>Lucas Morel</td>
+                        <td>lucasmorel@gmail.com</td>
+                        <td class="text-secondary">Employé</td>
+                        <td><a href="#" class="text-decoration-none fw-semibold text-primary">Modifier</a></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" class="form-check-input"></td>
+                        <td>04</td>
+                        <td>Paul Petit</td>
+                        <td>paulpetit@gmail.com</td>
+                        <td class="text-secondary">Employé</td>
+                        <td><a href="#" class="text-decoration-none fw-semibold text-primary">Modifier</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column flex-sm-row justify-content-between align-items-center mt-4 gap-3">
+        <span class="text-secondary fw-semibold">Affichage 1-10 sur 124 utilisateurs</span>
+        <div class="btn-group shadow-sm">
+            <button class="btn btn-outline-secondary bg-white text-muted border-end-0 px-3">&lt; Précédent</button>
+            <button class="btn btn-primary px-4">Suivant &gt;</button>
+        </div>
+    </div>
+
+</main>
+    
+</body>
+</html>
