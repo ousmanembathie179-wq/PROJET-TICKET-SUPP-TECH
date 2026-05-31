@@ -13,11 +13,12 @@
     <section class="container-fluid g-0">
         <div class="row g-0 vh-100">
             <div class="col-md-5 d-md-block">
-                <img class="w-100 h-100" src="clint-bustrillos-K7OUs6y_cm8-unsplash.jpg" alt="image de la page de connexion">
+                <img class="w-100 h-100" src="clint-bustrillos-K7OUs6y_cm8-unsplash.jpg"
+                    alt="image de la page de connexion">
             </div>
             <div class="col-md-6">
                 <div class="logoa container text-center">
-                    <img class="logo" src="depositphotos_41494073-stock-illustration-vector-wrench-icon.jpg" alt="logo">
+                    <img class="logo" src="logo.jpg" alt="logo">
                 </div>
                 <div class="connexion container">
                     <div class="mb-5">
@@ -26,19 +27,24 @@
                     <div class="space">
                         <p class="text-center">Connectez-vous pour accéder à votre espace</p>
                     </div>
-                    <form action="">
-                        <div class="mb-3 mt-5">
-                            <label for="email" class="form-label text-secondary">Email</label>
-                            <input type="email" class="form-control" id="email">
+                    <% if (error) { %>
+                        <div class="alert alert-danger text-center fw-bold mb-4" role="alert">
+                            <%= error %>
                         </div>
-                        <div class="mb-5 mt-5">
-                            <label for="password" class="form-label text-secondary">Mot de passe</label>
-                            <input type="password" class="form-control" id="password">
-                        </div>
-                        <div class="text-center mt-5">
-                            <button type="submit" class="btn btn-primary w-50 mt-3">Connexion</button>
-                        </div>
-                    </form>
+                    <% } %>
+                            <form action="/" method="POST">
+                                <div class="mb-3 mt-5">
+                                    <label for="email" class="form-label text-secondary">Email</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                </div>
+                                <div class="mb-5 mt-5">
+                                    <label for="password" class="form-label text-secondary">Mot de passe</label>
+                                    <input type="password" class="form-control" id="password" name="password" required>
+                                </div>
+                                <div class="text-center mt-5">
+                                    <button type="submit" class="btn btn-primary w-50 mt-3">Connexion</button>
+                                </div>
+                            </form>
                 </div>
             </div>
         </div>
